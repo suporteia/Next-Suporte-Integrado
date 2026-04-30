@@ -26,7 +26,6 @@ Pra adicionar mais acessos é só editar `data/usuarios.json`:
 | -------- | ----------- | --------- |
 | `admin`  | `admin`     | admin     |
 | `lucas`  | `lucas123`  | analista  |
-| `lorena` | `lorena123` | analista  |
 
 > ⚠️ Senhas em plaintext são **só pra demo**. Quando migrar pro Supabase, esse JSON some e os usuários vão pra `auth.users` + `public.usuarios` com RLS.
 
