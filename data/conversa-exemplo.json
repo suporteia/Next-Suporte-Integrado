@@ -1,0 +1,24 @@
+{
+  "abertura": "2026-04-28T09:14:00",
+  "mensagens": [
+    { "tipo": "system", "data": "2026-04-28T09:14:00", "texto": "Conversa transferida para o departamento Suporte" },
+    { "tipo": "cliente", "autor": "Luis Almeida", "data": "2026-04-28T09:14:32", "texto": "Oi, configurei o webhook ontem mas não está chegando nada do meu lado" },
+    { "tipo": "ia", "autor": "Lídia (IA)", "data": "2026-04-28T09:14:38", "texto": "Olá Luis! Posso te ajudar com isso. Você consegue me confirmar o endpoint que cadastrou?" },
+    { "tipo": "cliente", "autor": "Luis Almeida", "data": "2026-04-28T09:15:42", "texto": "https://api.minhaempresa.com/hooks/liguelead" },
+    { "tipo": "ia", "autor": "Lídia (IA)", "data": "2026-04-28T09:15:50", "texto": "Obrigada. Vou validar aqui se há tentativas de envio para esse endpoint. Um momento." },
+    { "tipo": "system", "data": "2026-04-28T09:18:10", "texto": "Conversa transferida de Lídia (IA) para Lorena" },
+    { "tipo": "atendente", "autor": "Lorena", "data": "2026-04-28T09:18:45", "texto": "Oi Luis, sou a Lorena do suporte. Vi que sua questão é sobre webhook não estar chegando. Vou checar os logs aqui." },
+    { "tipo": "cliente", "autor": "Luis Almeida", "data": "2026-04-28T09:19:02", "texto": "Beleza, valeu" },
+    { "tipo": "atendente", "autor": "Lorena", "data": "2026-04-28T09:32:15", "texto": "Identifiquei aqui — estamos tentando enviar mas a sua API está retornando 500. Você consegue verificar os logs do seu lado entre 14:20 e 14:30 de ontem?" },
+    { "tipo": "cliente", "autor": "Luis Almeida", "data": "2026-04-28T09:42:10", "midia": { "tipo": "image", "url": "https://picsum.photos/seed/log-screenshot/600/400", "caption": "Olha o que aparece no log do servidor" } },
+    { "tipo": "atendente", "autor": "Lorena", "data": "2026-04-28T09:43:28", "texto": "Perfeito, vejo o erro 500 aqui também. O payload chega mas dá erro de validação." },
+    { "tipo": "atendente", "autor": "Lorena", "data": "2026-04-28T09:45:00", "midia": { "tipo": "image", "url": "https://picsum.photos/seed/payload-exemplo/600/420", "caption": "Esse é o payload que estamos enviando — confere se o mapeamento bate com o que sua API espera" } },
+    { "tipo": "cliente", "autor": "Luis Almeida", "data": "2026-04-28T09:48:30", "texto": "Verifiquei agora, realmente tem erro 500. Acho que é o mapeamento de campos. Vou pedir pro nosso dev olhar" },
+    { "tipo": "system", "data": "2026-04-28T09:50:00", "texto": "Lorena adicionou Beatriz à conversa" },
+    { "tipo": "atendente", "autor": "Beatriz", "data": "2026-04-28T09:50:45", "texto": "Oi Luis, sou a Bia. Vou registrar aqui o caso pra ficar acompanhando. Pode me chamar se precisar de algo enquanto seu time investiga." },
+    { "tipo": "atendente", "autor": "Beatriz", "data": "2026-04-28T09:52:10", "midia": { "tipo": "documento", "url": "#", "nomeArquivo": "integracao-webhook-liguelead.pdf", "tamanho": "284 KB" }, "texto": "Te mando aqui também a documentação atualizada do webhook, qualquer coisa serve pra teu dev consultar" },
+    { "tipo": "cliente", "autor": "Luis Almeida", "data": "2026-04-28T10:42:18", "texto": "Resolvido aqui, era um campo obrigatório que não estava sendo aceito. Já voltou a chegar. Obrigado pessoal!" },
+    { "tipo": "cliente", "autor": "Luis Almeida", "data": "2026-04-28T10:42:45", "midia": { "tipo": "image", "url": "https://picsum.photos/seed/sucesso-200/600/380", "caption": "200 OK chegando agora 🎉" } },
+    { "tipo": "atendente", "autor": "Lorena", "data": "2026-04-28T10:43:00", "texto": "Maravilha Luis! Vou registrar como resolvido então. Qualquer coisa estamos por aqui." }
+  ]
+}

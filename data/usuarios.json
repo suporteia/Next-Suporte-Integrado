@@ -1,0 +1,26 @@
+[
+  {
+    "usuario": "admin",
+    "senha": "admin",
+    "nome": "Administrador",
+    "papel": "admin"
+  },
+  {
+    "usuario": "lucas",
+    "senha": "lucas123",
+    "nome": "Lucas Bermudes",
+    "papel": "analista"
+  },
+  {
+    "usuario": "beatriz",
+    "senha": "beatriz123",
+    "nome": "Beatriz",
+    "papel": "admin"
+  },
+    {
+    "usuario": "suellen",
+    "senha": "suellen123",
+    "nome": "Suellen",
+    "papel": "admin"
+  }
+]

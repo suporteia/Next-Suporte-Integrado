@@ -1,0 +1,5 @@
+[
+  { "id": "suporte",    "nome": "Suporte",    "cor": "#60a5fa" },
+  { "id": "tech",       "nome": "Tecnologia", "cor": "#c084fc" },
+  { "id": "financeiro", "nome": "Financeiro", "cor": "#fb923c" }
+]

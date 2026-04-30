@@ -1,0 +1,14 @@
+{
+  "atual": "u1",
+  "envolvidosIniciais": ["u2", "u3"],
+  "membros": [
+    { "id": "u1", "nome": "Lucas Bermudes",    "ini": "LB" },
+    { "id": "u2", "nome": "Suellen Romero",    "ini": "SR" },
+    { "id": "u3", "nome": "Beatriz",           "ini": "BE" },
+    { "id": "u4", "nome": "Lídia (IA)",        "ini": "LS" },
+    { "id": "u5", "nome": "Rauni Luan",        "ini": "RL" },
+    { "id": "u6", "nome": "Felipe Gomes",      "ini": "FG" },
+    { "id": "u7", "nome": "Eduardo Gonçalves", "ini": "EG" },
+    { "id": "u8", "nome": "Giovanna",          "ini": "GI" }
+  ]
+}

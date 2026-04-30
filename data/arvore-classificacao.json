@@ -1,0 +1,46 @@
+[
+  {
+    "tipo": "Problema",
+    "categorias": [
+      { "categoria": "Acesso e cadastro", "subcategoria": null, "motivos": ["Erro ao criar conta", "Erro ao fazer login", "Conta bloqueada", "Erro ao trocar e-mail ou senha", "Falha na reativação de conta"] },
+      { "categoria": "Crédito e cobrança", "subcategoria": null, "motivos": ["Saldo incorreto", "Saldo insuficiente para envio", "Cobrança duplicada", "Compra errada", "Compra não autorizada"] },
+      { "categoria": "Envios", "subcategoria": "Broadcast", "motivos": ["Não entregue", "Número específico não recebeu", "Ligação falhada", "Cobrado incorretamente", "Envio duplicado", "Envio iniciou sem gerar custo", "Status não atualizou", "Relatório incorreto", "Palavra bloqueada no conteúdo"] },
+      { "categoria": "Envios", "subcategoria": "Flow", "motivos": ["Flow não inicia ou travou", "Erro em bloco específico", "Não consigo salvar o flow", "Não consigo editar o flow", "Canal não entrega dentro do flow", "Integração não funcionando", "Instância WhatsApp não conectada", "Relatório incorreto ou pouco claro", "Cobrança errada no flow"] },
+      { "categoria": "Financeiro", "subcategoria": null, "motivos": ["Estorno prometido e não processado", "Abono não creditado na conta"] },
+      { "categoria": "Gestão de Leads", "subcategoria": "Listas", "motivos": ["Erro no upload de lista", "Erro na importação de arquivo", "Não consigo adicionar tag a uma lista"] },
+      { "categoria": "Gestão de Leads", "subcategoria": "Blocklist", "motivos": ["Blocklist não está funcionando"] },
+      { "categoria": "Gestão de Leads", "subcategoria": "TAG", "motivos": ["Erro ao criar tag", "Lead não está sendo adicionado em uma tag"] },
+      { "categoria": "Gestão de Leads", "subcategoria": "Ações em massa", "motivos": ["Erro ao adicionar tag em massa", "Erro ao remover tag em massa"] },
+      { "categoria": "Integração e API", "subcategoria": "API", "motivos": ["Integração via API com erro"] },
+      { "categoria": "Integração e API", "subcategoria": "Webhook", "motivos": ["Evento não encontrado na integração nativa", "Webhook configurado mas não está chegando"] },
+      { "categoria": "Planos", "subcategoria": null, "motivos": ["Cobrança errada do plano", "Cancelamento solicitado mas cobrança continua"] }
+    ]
+  },
+  {
+    "tipo": "Dúvida",
+    "categorias": [
+      { "categoria": "Acesso e cadastro", "subcategoria": null, "motivos": ["Termos de uso e políticas"] },
+      { "categoria": "Envios", "subcategoria": "Broadcast", "motivos": ["Como funciona o Broadcast", "Como interpretar relatório de envio"] },
+      { "categoria": "Envios", "subcategoria": "Flow", "motivos": ["Como configurar um bloco", "Como usar integração no flow", "Como interpretar relatório do flow"] },
+      { "categoria": "Gestão de Leads", "subcategoria": "Listas", "motivos": ["Por que a lista reduziu tanto após a higienização?"] },
+      { "categoria": "Gestão de Leads", "subcategoria": "Blocklist", "motivos": ["Como adicionar números na blocklist"] },
+      { "categoria": "Gestão de Leads", "subcategoria": "Envio internacional", "motivos": ["O sistema faz envio internacional?"] },
+      { "categoria": "Integração e API", "subcategoria": "API", "motivos": ["Dúvidas sobre uso da API", "Onde encontro a documentação?"] },
+      { "categoria": "Planos", "subcategoria": null, "motivos": ["Quais funcionalidades estão incluídas no plano", "Diferença entre planos / Plano Free"] }
+    ]
+  },
+  {
+    "tipo": "Solicitação",
+    "categorias": [
+      { "categoria": "Acesso e cadastro", "subcategoria": null, "motivos": ["Criar conta", "Criar conta via API", "Reativação de conta"] },
+      { "categoria": "Crédito e cobrança", "subcategoria": null, "motivos": ["Troca de créditos", "Transferência de créditos", "Compra de créditos", "Liberar pós pago"] },
+      { "categoria": "Envios", "subcategoria": null, "motivos": ["Montagem de envio para cliente"] },
+      { "categoria": "Financeiro", "subcategoria": null, "motivos": ["Solicitar estorno — problema no envio", "Solicitar estorno — plano não utilizado", "Emissão de NF", "Reenvio de NF"] },
+      { "categoria": "Gestão de Leads", "subcategoria": "Blocklist", "motivos": ["Adicionar número na blocklist", "Remover número da blocklist"] },
+      { "categoria": "Gestão de Leads", "subcategoria": "Listas", "motivos": ["Habilitar envio internacional"] },
+      { "categoria": "Integração e API", "subcategoria": "API", "motivos": ["Criar conta de API"] },
+      { "categoria": "Integração e API", "subcategoria": "Webhook", "motivos": ["Mapear nova integração"] },
+      { "categoria": "Planos", "subcategoria": null, "motivos": ["Upgrade de plano", "Downgrade de plano", "Cancelamento de plano", "Liberação de plano cortesia"] }
+    ]
+  }
+]

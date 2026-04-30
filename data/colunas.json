@@ -1,0 +1,9 @@
+[
+  { "id": "transferido",         "titulo": "Novo chamado",        "cor": "#93c5fd" },
+  { "id": "em-andamento",        "titulo": "Em andamento",        "cor": "#fbbf24" },
+  { "id": "tratativa-tech",      "titulo": "Tecnologia",          "cor": "#c084fc" },
+  { "id": "financeiro",          "titulo": "Financeiro",          "cor": "#fb923c" },
+  { "id": "aguardando-retorno",  "titulo": "Aguardando retorno",  "cor": "#a5b4fc" },
+  { "id": "concluido",           "titulo": "Concluído",           "cor": "#2ECDA7" },
+  { "id": "cancelado",           "titulo": "Cancelado",           "cor": "#f87171" }
+]

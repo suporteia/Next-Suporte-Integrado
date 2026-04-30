@@ -1,0 +1,32 @@
+[
+  {
+    "cliente": { "nome": "Ana Carolina", "ini": "AC", "cpfCnpj": "111.222.333-44", "telefone": "(11) 91111-2222", "email": "ana.carolina@empresa.com.br", "plataforma": "WhatsApp · Oficial" },
+    "titulo": "Não consigo acessar o painel administrativo",
+    "descricao": "Cliente está tentando logar no painel mas a senha não funciona. Já tentou recuperar mas não recebeu o email.",
+    "ultimaMsg": "Cliente: tentei trocar a senha mas o email não chega"
+  },
+  {
+    "cliente": { "nome": "Pedro Henrique", "ini": "PH", "cpfCnpj": "22.333.444/0001-55", "telefone": "(21) 92222-3333", "email": "pedro.henrique@empresa.com.br", "plataforma": "WhatsApp · Oficial" },
+    "titulo": "Como faço pra emitir nota fiscal?",
+    "descricao": "Cliente quer saber o procedimento pra emissão de NF de um serviço contratado mês passado.",
+    "ultimaMsg": "Cliente: como faço pra emitir nota?"
+  },
+  {
+    "cliente": { "nome": "Renata Santos", "ini": "RS", "cpfCnpj": "33.444.555/0001-66", "telefone": "(31) 93333-4444", "email": "renata.santos@empresa.com.br", "plataforma": "WhatsApp · Oficial" },
+    "titulo": "Erro 502 no painel há 30 min",
+    "descricao": "Cliente reporta que o painel está fora do ar há cerca de 30 minutos. Verificando se é instabilidade geral ou específica.",
+    "ultimaMsg": "Cliente: o sistema todo tá fora?"
+  },
+  {
+    "cliente": { "nome": "Felipe Almeida", "ini": "FA", "cpfCnpj": "44.555.666/0001-77", "telefone": "(41) 94444-5555", "email": "felipe.almeida@empresa.com.br", "plataforma": "WhatsApp · Oficial" },
+    "titulo": "Dúvida sobre limites do plano",
+    "descricao": "Cliente está avaliando upgrade de plano e quer entender os limites de envio do plano Premium.",
+    "ultimaMsg": "Cliente: quais os limites do premium?"
+  },
+  {
+    "cliente": { "nome": "Mariana Costa", "ini": "MC", "cpfCnpj": "55.666.777/0001-88", "telefone": "(11) 95555-6666", "email": "mariana.costa@empresa.com.br", "plataforma": "WhatsApp · Oficial" },
+    "titulo": "Solicitação de estorno de cobrança",
+    "descricao": "Cliente foi cobrada em duplicata na fatura de abril. Solicita estorno do valor duplicado.",
+    "ultimaMsg": "Cliente: fui cobrada duas vezes do mesmo plano"
+  }
+]
