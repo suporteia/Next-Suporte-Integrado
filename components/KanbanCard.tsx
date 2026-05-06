@@ -47,7 +47,6 @@ export function KanbanCard({ card: c, tags, onClick, onDragStart, onDragEnd }: K
         <span className="card-nome">{c.cliente.nome}</span>
       </div>
       <div className="card-titulo">{c.titulo}</div>
-      {c.ultimaMsg && <div className="card-msg">{c.ultimaMsg}</div>}
       {tagsDoCard.length > 0 && (
         <div className="card-tags">
           {tagsDoCard.map((t) => (

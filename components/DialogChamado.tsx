@@ -95,7 +95,7 @@ export function DialogChamado({
         fechadoEm: '',
         analista: membros.find((m) => m.id === membroAtualId) || null,
         envolvidos: [] as Membro[],
-        tagsSelecionadas: [] as string[],
+        tagsSelecionadas: ['suporte'] as string[],
         anexos: [] as Anexo[],
         tipo: '',
         categoria: '',
@@ -114,7 +114,7 @@ export function DialogChamado({
       fechadoEm: '',
       analista: membros.find((m) => m.id === membroAtualId) || null,
       envolvidos: [] as Membro[],
-      tagsSelecionadas: [] as string[],
+      tagsSelecionadas: ['suporte'] as string[],
       anexos: [] as Anexo[],
       tipo: '',
       categoria: '',
@@ -554,7 +554,7 @@ export function DialogChamado({
                 </div>
                 <div></div>
               </div>
-              {veioDeTransferencia && (
+              {veioDeTransferencia && false && (
                 <button className="btn-link" type="button" onClick={onAbrirHistorico}>
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />

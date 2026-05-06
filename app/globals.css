@@ -222,6 +222,43 @@ body {
 }
 .kanban-head-right { display: flex; gap: 6px; align-items: center; }
 
+/* ── Busca no kanban ───────────────────────────────────────────────── */
+.kanban-busca-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  padding: 0 8px;
+  height: 28px;
+  color: #737373;
+}
+.kanban-busca-wrap:focus-within {
+  border-color: rgba(255,255,255,0.18);
+  color: #a3a3a3;
+}
+.kanban-busca {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e5e5e5;
+  font-size: 11px;
+  width: 140px;
+  padding: 0;
+}
+.kanban-busca::placeholder { color: #525252; }
+.kanban-busca-clear {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #525252;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.kanban-busca-clear:hover { color: #a3a3a3; }
+
 /* ── Botão Transferir chamado (simulação) ────────────────────────── */
 .btn-transferir-sim {
   height: 28px;
@@ -271,6 +308,11 @@ body {
   border-radius: 3px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80px;
+  flex-shrink: 1;
 }
 
 /* ── Modal de atribuir analista ───────────────────────────────────── */
@@ -675,7 +717,8 @@ body {
 
 /* ── Colunas ───────────────────────────────────────────────────────── */
 .col {
-  flex: 0 0 240px;
+  flex: 1 1 200px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   background: #161616;
@@ -739,12 +782,13 @@ body {
 .card:hover { border-color: rgba(255, 255, 255, 0.16); }
 .card:active { cursor: grabbing; }
 .card.dragging { opacity: 0.4; }
-.card-top { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+.card-top { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; flex-wrap: nowrap; overflow: hidden; }
 .card-numero {
   font-size: 10px;
   font-weight: 500;
   color: #737373;
   letter-spacing: 0.04em;
+  flex-shrink: 0;
 }
 .card-tipo {
   font-size: 9.5px;
@@ -754,6 +798,11 @@ body {
   padding: 1px 6px;
   border-radius: 3px;
   margin-left: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80px;
+  flex-shrink: 1;
 }
 .card-tipo[data-tipo="Problema"]    { background: rgba(248, 113, 113, 0.14); color: #fca5a5; }
 .card-tipo[data-tipo="Dúvida"]      { background: rgba(147, 197, 253, 0.14); color: #93c5fd; }
@@ -1344,9 +1393,6 @@ body {
 }
 .sel option { background: #1f1f1f; color: #e5e5e5; }
 .mark-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
-@media (min-width: 600px) {
-  .mark-grid { grid-template-columns: repeat(4, 1fr); }
-}
 .mark-field { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .mark-lbl {
   font-size: 9.5px;

@@ -7,7 +7,6 @@ import { isoCurto } from '@/lib/utils';
 import type { Card, Membro } from '@/lib/types';
 
 import { LoginScreen } from '@/components/LoginScreen';
-import { TelaInicial } from '@/components/TelaInicial';
 import { TelaKanban } from '@/components/TelaKanban';
 import { ModalDetalhe } from '@/components/ModalDetalhe';
 import { ModalIndicadores } from '@/components/ModalIndicadores';
@@ -39,8 +38,6 @@ const ARVORE = arvoreData as TipoArvore[];
 const CLIENTE_PADRAO = clientePadraoData as ClientePadrao;
 const CONVERSA = conversaData as Conversa;
 
-type Tela = 'inicial' | 'kanban';
-
 type DialogState =
   | { aberto: false }
   | { aberto: true; modo: 'criar'; comOrigem: boolean }
@@ -61,7 +58,6 @@ export default function Page() {
     transferirChamadoMock,
   } = useCards();
 
-  const [tela, setTela] = useState<Tela>('kanban');
   const [modalDetalheCardId, setModalDetalheCardId] = useState<string | null>(null);
   const [modalIndicadoresAberto, setModalIndicadoresAberto] = useState(false);
   const [historicoAberto, setHistoricoAberto] = useState(false);
@@ -82,6 +78,9 @@ export default function Page() {
     (cardId: string, colunaDestino: string) => {
       const card = cards.find((c) => c.id === cardId);
       if (!card || card.coluna === colunaDestino) return;
+
+      // Não permite voltar para "Novo chamado" depois de sair
+      if (colunaDestino === 'transferido') return;
 
       if (!card.analista && colunaDestino !== 'transferido') {
         setAtribuir({ aberto: true, cardId, colunaDestino });
@@ -192,7 +191,6 @@ export default function Page() {
       };
       addCard(novoCard);
       setDialog({ aberto: false });
-      setTela('kanban');
     },
     [dialog, cards.length, addCard, editarCard]
   );
@@ -218,14 +216,7 @@ export default function Page() {
 
   return (
     <>
-      {tela === 'inicial' && (
-        <TelaInicial
-          onIrPraKanban={() => setTela('kanban')}
-          onAbrirChamadoDireto={() => setDialog({ aberto: true, modo: 'criar', comOrigem: false })}
-        />
-      )}
-      {tela === 'kanban' && (
-        <TelaKanban
+      <TelaKanban
           colunas={COLUNAS}
           tags={TAGS}
           cards={cards}
@@ -234,11 +225,9 @@ export default function Page() {
           onMoverCard={moveCard}
           onTransferirChamadoMock={transferirChamadoMock}
           onAbrirIndicadores={() => setModalIndicadoresAberto(true)}
-          onAbrirNovoChamado={() => setDialog({ aberto: true, modo: 'criar', comOrigem: true })}
-          onVoltar={() => setTela('inicial')}
+          onAbrirNovoChamado={() => setDialog({ aberto: true, modo: 'criar', comOrigem: false })}
           onSair={sair}
         />
-      )}
 
       {cardModalDetalhe && (
         <ModalDetalhe
